@@ -1,4 +1,5 @@
 export NVM_DIR="$HOME/.custom-nvm-dir"
+export NVM_LAZY_LOAD=true
 
 source ~/zsh/antigen/antigen.zsh
 
