@@ -1,6 +1,7 @@
-export NVM_DIR="$HOME/.custom-nvm-dir"
+export MYHOME="/home/jim/"
+export NVM_DIR="$MYHOME/.custom-nvm-dir"
 export NVM_LAZY_LOAD=true
-export GOPATH=$HOME/go
+export GOPATH=$MYHOME/go
 
 source ~/zsh/antigen/antigen.zsh
 
@@ -30,17 +31,22 @@ if [ -d "/opt/platform-tools" ] ; then
 fi
 
 if [ -d "$HOME/Dev/AndroidDev/bin" ] ; then
-	export PATH=$HOME/Dev/AndroidDev/bin:$PATH
-	export PATH=$HOME/Dev/AndroidDev/bootTools:$PATH
+	export PATH=$MYHOME/Dev/AndroidDev/bin:$PATH
+	export PATH=$MYHOME/Dev/AndroidDev/bootTools:$PATH
 fi
 
-if [ -d "/usr/lib/go-1.10/bin" ] ; then
-	export PATH=$PATH:/usr/lib/go-1.10/bin
-fi
+#if [ -d "/usr/lib/go-1.10/bin" ] ; then
+#	export PATH=/usr/lib/go-1.10/bin:$PATH
+#fi
 
-if [ -d "$GOPATH/bin" ] ; then
-	export PATH=$GOPATH/bin:$PATH
-fi
+#if [ -d "$GOPATH/bin" ] ; then
+#	export PATH=$GOPATH/bin:$PATH
+#	alias bettercap='/home/jim//go/bin/bettercap'
+#fi
+
+#if [ -d "$HOME/Dev/Security/beef/" ] ; then
+#	export PATH=$MYHOME/Dev/Security/beef:$PATH
+#fi
 
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
