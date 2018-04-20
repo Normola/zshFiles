@@ -7,6 +7,7 @@ source ~/zsh/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
+antigen bundle aws
 antigen bundle command-not-found
 antigen bundle extract
 antigen bundle git
@@ -50,3 +51,4 @@ fi
 
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
+source $HOME/.local/bin/aws_zsh_completer.sh
