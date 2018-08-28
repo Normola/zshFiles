@@ -36,18 +36,7 @@ if [ -d "$HOME/Dev/AndroidDev/bin" ] ; then
 	export PATH=$MYHOME/Dev/AndroidDev/bootTools:$PATH
 fi
 
-#if [ -d "/usr/lib/go-1.10/bin" ] ; then
-#	export PATH=/usr/lib/go-1.10/bin:$PATH
-#fi
-
-#if [ -d "$GOPATH/bin" ] ; then
-#	export PATH=$GOPATH/bin:$PATH
-#	alias bettercap='/home/jim//go/bin/bettercap'
-#fi
-
-#if [ -d "$HOME/Dev/Security/beef/" ] ; then
-#	export PATH=$MYHOME/Dev/Security/beef:$PATH
-#fi
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:$PATH
 
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
