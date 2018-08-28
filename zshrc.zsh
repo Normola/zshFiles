@@ -47,6 +47,6 @@ if [ -d "$HOME/Dev/AndroidDev/bin" ] ; then
 fi
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:$PATH
-
+expott PATH=/home/jim/kube/client/bin:$PATH
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
 
